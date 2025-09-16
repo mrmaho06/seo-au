@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Ankara SEO danışmanlığı | Sıfırıncı sıra çalışması | Seo hizmeti | Google'da ilk sıraya çıkmak | Kaliteli organiz içerik yazarlığı | Wordpress seo çalışmaları">
+    <meta name="description" content="Ankara SEO consulting | Zero position work | SEO service | Getting to the first position on Google | Quality organic content writing | WordPress SEO work">
     <meta name="author" content="Inovatik">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
 	<meta property="og:site_name" content="Seolojist" /> <!-- website name -->
 	<meta property="og:site" content="https://seolojist.com.tr" /> <!-- website link -->
-	<meta property="og:title" content="Seolojist | Seo Hizmeti ve Danışmanlığı"/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="Seolojist Pazarlama ve SEO Ajansı ile sitenizi ilk sayfada yerini alsın!" /> <!-- description shown in the actual shared post -->
+	<meta property="og:title" content="Seolojist | SEO Service and Consulting"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="Let your site take its place on the first page with Seolojist Marketing and SEO Agency!" /> <!-- description shown in the actual shared post -->
 	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
 	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
 	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>Seolojist - SEO Hizmeti | Danışmanlığı</title>
+    <title>Seolojist - SEO Service | Consulting</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
@@ -28,6 +28,89 @@
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
+	
+	<!-- Language Dropdown Styles -->
+	<style>
+		.language-dropdown {
+			position: relative;
+			display: inline-block;
+			margin-right: 15px;
+		}
+		
+		.language-selector {
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+			padding: 5px 8px;
+			border-radius: 4px;
+			transition: background-color 0.2s ease;
+		}
+		
+		.language-selector:hover {
+			background-color: rgba(255, 255, 255, 0.1);
+		}
+		
+		.flag-icon {
+			width: 24px;
+			height: 16px;
+			border-radius: 2px;
+			margin-right: 6px;
+		}
+		
+		.dropdown-arrow {
+			font-size: 10px;
+			color: #fff;
+			transition: transform 0.2s ease;
+		}
+		
+		.language-dropdown:hover .dropdown-arrow {
+			transform: rotate(180deg);
+		}
+		
+		.language-dropdown-content {
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			background-color: #fff;
+			border-radius: 4px;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+			z-index: 1000;
+			min-width: 120px;
+			margin-top: 5px;
+		}
+		
+		.language-dropdown:hover .language-dropdown-content {
+			display: block;
+		}
+		
+		.language-option {
+			display: flex;
+			align-items: center;
+			padding: 8px 12px;
+			text-decoration: none;
+			color: #333;
+			transition: background-color 0.2s ease;
+		}
+		
+		.language-option:hover {
+			background-color: #f8f9fa;
+			text-decoration: none;
+			color: #333;
+		}
+		
+		.flag-icon-small {
+			width: 20px;
+			height: 13px;
+			border-radius: 2px;
+			margin-right: 8px;
+		}
+		
+		.language-option span {
+			font-size: 14px;
+			font-weight: 500;
+		}
+	</style>
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
@@ -63,31 +146,45 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#header">Ana Sayfa <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#features">Hizmetlerimiz</a>
+                    <a class="nav-link page-scroll" href="#features">Our Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#preview">İşlerimiz</a>
+                    <a class="nav-link page-scroll" href="#preview">Our Work</a>
                 </li>
 
                 <!-- Dropdown Menu -->          
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="#details" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Detaylar</a>
+                    <a class="nav-link dropdown-toggle page-scroll" href="#details" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Details</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="sartlar-ve-kosullar.html"><span class="item-text">Hizmet Şartları</span></a>
+                        <a class="dropdown-item" href="sartlar-ve-kosullar.html"><span class="item-text">Terms of Service</span></a>
                         <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="gizlilik-politikasi.html"><span class="item-text">Gizlilik Politikası</span></a>
+                        <a class="dropdown-item" href="gizlilik-politikasi.html"><span class="item-text">Privacy Policy</span></a>
                     </div>
                 </li>
                 <!-- end of dropdown menu -->
 
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">İletişim</a>
+                    <a class="nav-link page-scroll" href="#contact">Contact</a>
                 </li>
             </ul>
             <span class="nav-item social-icons">
+                <!-- Language Dropdown -->
+                <div class="language-dropdown">
+                    <div class="language-selector">
+                        <img src="https://flagcdn.com/w20/au.png" alt="Australia Flag" class="flag-icon">
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </div>
+                    <div class="language-dropdown-content">
+                        <a href="https://seolojist.com.tr" class="language-option">
+                            <img src="https://flagcdn.com/w20/tr.png" alt="Turkey Flag" class="flag-icon-small">
+                            <span>Turkish</span>
+                        </a>
+                    </div>
+                </div>
+                
                 <span class="fa-stack">
                     <a href="https://instagram.com/seolojistcomtr?igshid=MzRlODBiNWFlZA==">
                         <i class="fas fa-circle fa-stack-2x"></i>
@@ -119,9 +216,8 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="text-container">
-                            <h1>GOOGLE'da YERİNİZİ <br>ALIN <span id="js-rotating">SEO, SEM</span></h1>
-                            <p class="p-large">Hedefimiz Web sitelerinizin, arama motorlarının kriterlerine
-                                uygun hale getirilmesidir. Websitenizin ziyaretçilerini arttırmak istiyorsanız size özel teklif hazırlamamız için bizimle iletişime geçin.</p>
+                            <h1>TAKE YOUR PLACE ON <br>GOOGLE <span id="js-rotating">SEO, SEM</span></h1>
+                            <p class="p-large">Our goal is to make your websites compliant with search engine criteria. If you want to increase your website visitors, contact us to prepare a special offer for you.</p>
                             <a class="btn-solid-lg page-scroll" href="#your-link">SEO</a>
                             <a class="btn-solid-lg page-scroll" href="#your-link">SEM</a>
                         </div>
@@ -145,11 +241,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>HİZMETLERİMİZ</h2>
-                    <div class="p-heading p-large">SEO: Arama Motoru Optimizasyonu, Web sitelerinin arama motorlarında daha
-                        iyi performans göstermesi için yapılan çalışmaların tümüne verilen isimdir.</div>
-                        <div class="p-heading p-large">SEM: Arama motoru pazarlaması anlamına gelmektedir.
-                            Genel olarak reklam çalışmalarıyla marka bilinirliğinizin artmasına olanak sağlar.</div>
+                    <h2>OUR SERVICES</h2>
+                    <div class="p-heading p-large">SEO: Search Engine Optimization, the name given to all the work done to make websites perform better in search engines.</div>
+                        <div class="p-heading p-large">SEM: Search Engine Marketing. In general, it enables your brand awareness to increase through advertising work.</div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -182,8 +276,8 @@
                                     <div class="card left-pane first">
                                         <div class="card-body">
                                             <div class="text-wrapper">
-                                                <h4 class="card-title">HEDEF ANALİZİ</h4>
-                                                <p>Web sitenizi analiz ediyoruz. Hazırladığımız detaylı raporla size en uygun stratejiyi belirliyoruz.</p>
+                                                <h4 class="card-title">TARGET ANALYSIS</h4>
+                                                <p>We analyze your website. We determine the most suitable strategy for you with the detailed report we prepare.</p>
                                             </div>
                                             <div class="card-icon">
                                                 <i class="far fa-compass"></i>
@@ -193,8 +287,8 @@
                                     <div class="card left-pane">
                                         <div class="card-body">
                                             <div class="text-wrapper">
-                                                <h4 class="card-title">DÖNÜŞÜM OPTİMİZASYONU</h4>
-                                                <p>Web sitenizin kaliteli trafik olmasının ötesinde sitede gerçekleştirilen eylemin artmasına yönelik çalışmalar yapıyoruz.</p>
+                                                <h4 class="card-title">CONVERSION OPTIMIZATION</h4>
+                                                <p>We work to increase the actions performed on the site beyond having quality traffic to your website.</p>
                                             </div>
                                             <div class="card-icon">
                                                 <i class="far fa-file-code"></i>
@@ -204,8 +298,8 @@
                                     <div class="card left-pane">
                                         <div class="card-body">
                                             <div class="text-wrapper">
-                                                <h4 class="card-title">SEO & İÇERİK STRATEJİSİ</h4>
-                                                <p>Anahtar kelime analizinde çıkarttığımız anahtar kelimeler ile beraber markanıza özel olarak içerik stratejisi oluşturuyoruz.</p>
+                                                <h4 class="card-title">SEO & CONTENT STRATEGY</h4>
+                                                <p>We create a content strategy specifically for your brand together with the keywords we extract from keyword analysis.</p>
                                             </div>
                                             <div class="card-icon">
                                                 <i class="far fa-gem"></i>
@@ -229,8 +323,8 @@
                                                 <i class="far fa-calendar-check"></i>
                                             </div>
                                             <div class="text-wrapper">
-                                                <h4 class="card-title">ANALİZ & RAPORLAMA</h4>
-                                                <p>Uyguladığımız SEO stratejisinin sonuçlarını sürekli analiz ediyor ve müşterilerimize düzenli olarak bilgi veriyoruz.</p>
+                                                <h4 class="card-title">ANALYSIS & REPORTING</h4>
+                                                <p>We continuously analyze the results of our SEO strategy and regularly inform our customers.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -241,7 +335,7 @@
                                             </div>
                                             <div class="text-wrapper">
                                                 <h4 class="card-title">KEYWORD SEARCH</h4>
-                                                <p>Markanızın bilinirliğini arttırmaya ve web sitesinize organik kaliteli trafik çekmeye yönelik yararlı olabilecek anahtar kelimeleri tespit ediyoruz.</p>
+                                                <p>We identify keywords that may be useful for increasing your brand awareness and attracting organic quality traffic to your website.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -251,8 +345,8 @@
                                                 <i class="fas fa-cube"></i>
                                             </div>
                                             <div class="text-wrapper">
-                                                <h4 class="card-title">SEKTÖR VE RAKİP ANALİZİ</h4>
-                                                <p>Rakiplerinizin pazardaki paylarını araştırıyor ve sektörünüzün pazar raporunu size sunuyoruz.</p>
+                                                <h4 class="card-title">INDUSTRY AND COMPETITOR ANALYSIS</h4>
+                                                <p>We research your competitors' market shares and present you with the market report of your industry.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -278,8 +372,8 @@
                                 <!-- Text And Icon Cards Area -->
                                 <div class="col-md-8">
                                     <div class="text-area">
-                                        <h3>Hedeflerinize Hızlı Ulaşın!</h3>
-                                        <p>SEO’ya kıyasla sizlere bazı avantajlar sunar. En büyük dezavantajı ise siz para ödedikçe reklamlarınız yayınlanır. Bazı kelimeler için yüksek ücretler de ödemeniz gerekebilir. Avantajları:
+                                        <h3>Reach Your Goals Quickly!</h3>
+                                        <p>It offers you some advantages compared to SEO. The biggest disadvantage is that your ads are published as long as you pay. You may also need to pay high fees for some words. Advantages:
                                     </div> <!-- end of text-area -->
                                     
                                     <div class="icon-cards-area">
@@ -288,7 +382,7 @@
                                                     <i class="fas fa-cube"></i>
                                                 </div>
                                                 <div class="card-body">
-                                                    <h4 class="card-title">Satışlarınızı artırabilme</h4>
+                                                    <h4 class="card-title">Increase your sales</h4>
                                                 </div>
                                             </div>
                                             <div class="card">
@@ -296,7 +390,7 @@
                                                     <i class="far fa-bookmark"></i>
                                                 </div>
                                                 <div class="card-body">
-                                                    <h4 class="card-title">Ziyaretçi sayınızı artırabilme</h4>
+                                                    <h4 class="card-title">Increase your visitor count</h4>
                                                 </div>
                                             </div>
                                             <div class="card">
@@ -304,7 +398,7 @@
                                                     <i class="far fa-calendar-check"></i>
                                                 </div>
                                                 <div class="card-body">
-                                                    <h4 class="card-title">Anında Google’da üst sırada çıkabilme</h4>
+                                                    <h4 class="card-title">Instantly appear at the top of Google</h4>
                                                 </div>
                                             </div>
                                             <div class="card">
@@ -312,7 +406,7 @@
                                                     <i class="far fa-file-code"></i>
                                                 </div>
                                                 <div class="card-body">
-                                                    <h4 class="card-title">Sadece reklama tıklanınca ücret ödeme</h4>
+                                                    <h4 class="card-title">Pay only when the ad is clicked</h4>
                                                 </div>
                                             </div>
                                     </div> <!-- end of icon cards area -->
@@ -337,7 +431,7 @@
                                                 <i class="far fa-calendar-check"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Kurumsal Kimlik Kazanın</h4>
+                                                <h4 class="card-title">Gain Corporate Identity</h4>
                                             </div>
                                         </div>
                                         <div class="card">
@@ -345,7 +439,7 @@
                                                 <i class="far fa-file-code"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Marka Bilinirliğini Arttırın</h4>
+                                                <h4 class="card-title">Increase Brand Awareness</h4>
                                             </div>
                                         </div>
                                         <div class="card">
@@ -353,7 +447,7 @@
                                                 <i class="fas fa-cube"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Sitenizi İstediğiniz Gibi Tasarlayın</h4>
+                                                <h4 class="card-title">Design Your Site As You Want</h4>
                                             </div>
                                         </div>
                                         <div class="card">
@@ -361,15 +455,15 @@
                                                 <i class="far fa-bookmark"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Google'da İlk Sayfada Yer Alın</h4>
+                                                <h4 class="card-title">Take Place on the First Page of Google</h4>
                                                 
                                             </div>
                                         </div>
                                     </div> <!-- end of icon cards area -->
                                     
                                     <div class="text-area">
-                                        <h3>Google'da İlk Sayfada Yer Alın</h3>
-                                        <p>Sizlere sunacağımız SEO hizmeti ile Google'da ilk sayfaya hızlıca yükselin. Markanızın bilinirliğiyle birlikte satışlarınız artsın. Organik trafik ile reklam vermeden daha çok kar edin!</p>
+                                        <h3>Take Place on the First Page of Google</h3>
+                                        <p>Rise quickly to the first page of Google with our SEO service. Let your sales increase along with your brand awareness. Make more profit with organic traffic without advertising!</p>
                                     </div> <!-- end of text-area -->
                                 </div> <!-- end of col-md-8 -->
                                 <!-- end of text and icon cards area -->
@@ -399,11 +493,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>NEDEN SEO YAPTIRMALIYIM?</h2>
-                    <div class="p-heading p-large">✓ SEO ile sitenize daha çok trafik çekersiniz.<br>
-                        ✓ SEO ile satışlarınız artar.<br>
-                        ✓ SEO ile yeni müşteriler kazanırsınız.<br>
-                        ✓ ve daha fazlasını...</div>
+                    <h2>WHY SHOULD I DO SEO?</h2>
+                    <div class="p-heading p-large">✓ With SEO, you attract more traffic to your site.<br>
+                        ✓ With SEO, your sales increase.<br>
+                        ✓ With SEO, you gain new customers.<br>
+                        ✓ and much more...</div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -586,8 +680,8 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="text-white mb-4">Tamamlanan Projelerimiz</h2>
-        <p class="text-white-50 mb-5">Müşterilerimizin dijital dünyada nasıl büyüdüğünü görün</p>
+        <h2 class="text-white mb-4">Our Completed Projects</h2>
+        <p class="text-white-50 mb-5">See how our customers grow in the digital world</p>
         
         <!-- Preview Cards -->
         <div class="row g-3 mb-4">
@@ -619,7 +713,7 @@
         
         <!-- View All Button -->
         <a href="portfolio.html" class="btn btn-light btn-lg px-5 py-3">
-          <i class="fas fa-eye me-2"></i>Tüm İşlerimizi Görün
+          <i class="fas fa-eye me-2"></i>View All Our Work
         </a>
       </div>
     </div>
@@ -635,9 +729,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>İLETİŞİM</h2>
+                    <h2>CONTACT</h2>
                     <ul class="list-unstyled li-space-lg">
-                        <li class="address">Bize Ulaşın</li>
+                        <li class="address">Contact Us</li>
                          <!--/*
                         <li><i class="fas fa-map-marker-alt"></i>Macun Mah. 204 Cad Yenimahalle/Ankara</li>
                         <li><i class="fas fa-phone"></i><a class="blue" href="tel:003024630820">+90 555 55 55</a></li>
@@ -666,10 +760,10 @@
                             <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
                           </div>
                            <div class="form-group checkbox">
-                                                  <input type="checkbox" id="cterms" value="Agreed-to-Terms" required><a href="gizlilik-politikasi.html">Gizlilik Politikası</a> ve <a href="sartlar-ve-kosullar.html">hizmet şartlarını</a> okudum, kabul ediyorum.
+                                                  <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and accept the <a href="gizlilik-politikasi.html">Privacy Policy</a> and <a href="sartlar-ve-kosullar.html">terms of service</a>.
                                                   <div class="help-block with-errors"></div>
                                               </div>
-                          <button type="submit"  class="form-control-submit-button">Gönder!</button>
+                          <button type="submit"  class="form-control-submit-button">Send!</button>
                         </form>
                       </div>
                     <!-- end of contact form -->
@@ -687,24 +781,24 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="footer-col">
-                        <h4>Seolojist SEO Hizmeti Hakkında</h4>
-                        <p>SEO hizmetini alabileceğiniz en iddialı ve güvenilir, tutkulu ve hedef odaklı bir ekibiz.</p>
+                        <h4>About Seolojist SEO Service</h4>
+                        <p>We are the most ambitious and reliable, passionate and goal-oriented team where you can get SEO service.</p>
                     </div>
                 </div> <!-- end of col -->
                 <div class="col-md-4">
                     <div class="footer-col middle">
-                        <h4>Önemli Linkler</h4>
+                        <h4>Important Links</h4>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Lütfen okuyun <a class="turquoise" href="sartlar-ve-kosullar.html">Hizmet Şartları</a>, <a class="turquoise" href="gizlilik-politikasi.html">Gizlilik Politikası</a></div>
+                                <div class="media-body">Please read <a class="turquoise" href="sartlar-ve-kosullar.html">Terms of Service</a>, <a class="turquoise" href="gizlilik-politikasi.html">Privacy Policy</a></div>
                             </li>
                         </ul>
                     </div>
                 </div> <!-- end of col -->
                 <div class="col-md-4">
                     <div class="footer-col last">
-                        <h4>Sosyal Medya</h4>
+                        <h4>Social Media</h4>
                         <span class="fa-stack">
                             <a href="https://www.facebook.com/profile.php?id=100095546310580">
                                 <i class="fas fa-circle fa-stack-2x"></i>
